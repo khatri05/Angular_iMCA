@@ -1,0 +1,19 @@
+<div>
+    <div>
+        <nav style="display: flex; align-items: center; gap: 20px; background-color: #f3b256;">
+            <img [src]="imagePath" alt="Course Image" style="width: 100px; height: 70px; border-radius: 50px;" class="img-thumbnail">
+            <h4>Angular Practicals</h4>
+        </nav>
+    </div>
+    <div style="margin-top: 30px;">
+        <h3>Welcome to: <input type="text" [(ngModel)]="courseTitle" style="width: 300px;"></h3>
+        <p style="background-color: rgb(156, 152, 148);">
+            Course Title: {{ courseTitle }} <br>
+            Duration: {{ courseDuration }} <br>
+            Fees: {{ courseFees }} <br>
+            Faculty: {{ courseFaculty }} <br>
+            Available: {{ isCourseAvailable }}<br>
+        </p>
+        <input type="button" (click)="courseEnrollment()" value="Enroll Now" class="btn btn-success">
+    </div>
+</div>

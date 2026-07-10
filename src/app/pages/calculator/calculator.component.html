@@ -1,0 +1,20 @@
+<div class="container pt-5 card bg-light" style="width: 500px; height: 400px; align-items: center;">
+    <h2>Calculator Assignment!</h2>
+    <div>
+        <input type="text" [(ngModel)]="firstNumber" placeholder="Enter first number"><br><br>
+        <input type="text" [(ngModel)]="secondNumber" placeholder="Enter second number"><br><br>
+        <input type="text" [(ngModel)]="calculationResult" placeholder="Calculation Result" readonly><br><br>
+    </div>
+    <div style="margin-bottom: 10px;">
+        <button class="btn btn-success" (click)="calAdd()" style="margin-right: 10px; width: 75px;">ADD</button>
+        <button class="btn btn-success" (click)="calSubtract()">SUBTRACT</button>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <button class="btn btn-success" (click)="calMultiply()" style="margin-right: 10px;">MULTIPLY</button>
+        <button class="btn btn-success" (click)="calDivide()">DIVIDE</button>
+    </div>
+    <div>
+        <button class="btn btn-warning" (click)="clearFields()">Clear</button>
+    </div>
+</div>
