@@ -1,0 +1,11 @@
+<hr>
+<h3>Select Courses</h3>
+<select [(ngModel)]="selectedCourse">
+    <option value="">--Select Course--</option>
+    <option [value]="courses[0]">{{ courses[0] }}</option>
+    <option [value]="courses[1]">{{ courses[1] }}</option>
+    <option [value]="courses[2]">{{ courses[2] }}</option>
+    <option [value]="courses[3]">{{ courses[3] }}</option>
+</select><br><br>
+
+<h4>Selected Course: {{selectedCourse}}</h4>
