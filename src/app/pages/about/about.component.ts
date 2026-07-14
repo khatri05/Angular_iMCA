@@ -13,7 +13,7 @@ export class AboutComponent {
   courseDuration = '4 months';
   courseFees = 50000;
   courseFaculty = 'Prof.Nilesh Taware';
-  isCourseAvailable = true;
+  isCourseAvailable = "Available";
   imagePath = 'https://ionic.io/blog/wp-content/uploads/2024/02/angular-feature-image-1.png';
 
   courseEnrollment() {

@@ -22,9 +22,10 @@
             </li>
         </ul>
     </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand">
-            <h2>Angular</h2>
+    <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary sticky-top">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnULbfbYGEuuC2GVfStMgUM2ivq5REnhLHMnvuLk2Ig&s=10" alt="Logo" width="45" height="45" class="rounded-circle me-2">
+            <span class="fw-bold">Angular</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,19 +38,32 @@
                     <a class="nav-link" routerLink="home" routerLinkActive="active" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item active">
+                    <a class="nav-link" routerLink="profile" routerLinkActive="active" aria-current="page">Profile</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" routerLink="course" routerLinkActive="active" aria-current="page">Course</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" routerLink="calculator" routerLinkActive="active" aria-current="page">Calculator</a>
+                    <a class="nav-link" routerLink="enum" routerLinkActive="active" aria-current="page">Enum</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="dashboard" routerLinkActive="active" aria-current="page">Dashboard</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="calculator" routerLinkActive="active"
+                        aria-current="page">Calculator</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active" aria-current="page">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div>
         <router-outlet></router-outlet>
-        <div>
-            <app-footer></app-footer>
-        </div>
+    </div>
+    <div>
+        <app-footer></app-footer>
     </div>
 </body>
 

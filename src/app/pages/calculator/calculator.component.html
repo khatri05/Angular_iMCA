@@ -1,21 +1,107 @@
-<hr>
-<div class="container pt-5 card bg-light" style="width: 500px; height: 400px; align-items: center;">
-    <h2>Calculator Assignment!</h2>
-    <div>
-        <input type="text" [(ngModel)]="firstNumber" placeholder="Enter first number"><br><br>
-        <input type="text" [(ngModel)]="secondNumber" placeholder="Enter second number"><br><br>
-        <input type="text" [(ngModel)]="calculationResult" placeholder="Calculation Result" readonly><br><br>
-    </div>
-    <div style="margin-bottom: 10px;">
-        <button class="btn btn-success" (click)="calAdd()" style="margin-right: 10px; width: 75px;">ADD</button>
-        <button class="btn btn-success" (click)="calSubtract()">SUBTRACT</button>
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-primary text-white text-center py-3">
+                    <h2>🧮 Calculator Assignment</h2>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <!-- First Number -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            First Number
+                        </label>
+
+                        <input
+                            type="number"
+                            class="form-control"
+                            [(ngModel)]="firstNumber"
+                            placeholder="Enter first number">
+                    </div>
+
+                    <!-- Second Number -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            Second Number
+                        </label>
+
+                        <input
+                            type="number"
+                            class="form-control"
+                            [(ngModel)]="secondNumber"
+                            placeholder="Enter second number">
+                    </div>
+
+                    <!-- Result -->
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">
+                            Result
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control bg-light"
+                            [(ngModel)]="calculationResult"
+                            readonly>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="row g-3">
+
+                        <div class="col-6">
+                            <button
+                                class="btn btn-success w-100"
+                                (click)="calAdd()">
+                                ➕ Add
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button
+                                class="btn btn-danger w-100"
+                                (click)="calSubtract()">
+                                ➖ Subtract
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button
+                                class="btn btn-primary w-100"
+                                (click)="calMultiply()">
+                                ✖ Multiply
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button
+                                class="btn btn-warning w-100 text-dark"
+                                (click)="calDivide()">
+                                ➗ Divide
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button
+                            class="btn btn-secondary"
+                            (click)="clearFields()">
+                            🗑 Clear
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div style="margin-bottom: 10px;">
-        <button class="btn btn-success" (click)="calMultiply()" style="margin-right: 10px;">MULTIPLY</button>
-        <button class="btn btn-success" (click)="calDivide()">DIVIDE</button>
-    </div>
-    <div>
-        <button class="btn btn-warning" (click)="clearFields()">Clear</button>
-    </div>
 </div>

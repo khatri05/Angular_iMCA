@@ -1,14 +1,57 @@
-<hr>
-<div>
-    <h3>Assignment 2</h3>
-    <div class="card" style="width:400px;">
-        <img class="card-img-top" src="{{studentDetail.imagePath}}" alt="Card image">
-        <div class="card-body">
-            <h4 class="card-title">{{studentDetail.name}}</h4>
-            <p class="card-text">
-                Email: {{studentDetail.email}} <br>
-                Age: {{studentDetail.age}}
-            </p>
+<div class="container mt-5">
+
+    <h2 class="text-center text-primary fw-bold mb-4">
+        🎓 Student Profile
+    </h2>
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <img
+                    [src]="studentDetail.imagePath"
+                    class="card-img-top rounded-top"
+                    alt="Student Image"
+                    style="height:300px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h3 class="card-title text-center fw-bold text-primary">
+                        {{studentDetail.name}}
+                    </h3>
+
+                    <hr>
+
+                    <p class="card-text fs-5">
+
+                        <strong>📧 Email:</strong><br>
+                        {{studentDetail.email}}
+
+                    </p>
+
+                    <p class="card-text fs-5">
+
+                        <strong>🎂 Age:</strong>
+                        {{studentDetail.age}}
+
+                    </p>
+
+                    <div class="d-grid mt-4">
+
+                        <button class="btn btn-primary">
+                            View Profile
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
+
 </div>
