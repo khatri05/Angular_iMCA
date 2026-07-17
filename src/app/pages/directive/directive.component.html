@@ -1,0 +1,23 @@
+<div>
+  @if (isUserLoggedIn) {
+    <div>
+      <h4>Welcome user...</h4>
+    </div>
+  } @else {
+    <div>
+      <h4 class="alert alert-danger">
+        Please Login first
+      </h4>
+    </div>
+  }
+</div>
+<div>
+    <button class="btn btn-warning" (click)="toggleState()">Login</button>
+</div>
+<div>
+    @for (stud of studentList;  track $index; let i=$index){
+        <ul>
+            <li>{{i+1}}-{{stud}}</li>
+        </ul>
+    }
+</div>

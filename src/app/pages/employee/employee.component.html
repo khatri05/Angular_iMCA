@@ -1,0 +1,35 @@
+<table class="table">
+  <caption>
+    List of Employee Details
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Employee ID</th>
+      <th scope="col">Employee Name</th>
+      <th scope="col">Employee Salary</th>
+      <th scope="col">Department</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (emp of EmpDetails; track emp.Empid) {
+      @if (emp.EmpCity === "Ahmedabad") {
+        <tr>
+          <td>{{ emp.Empid }}</td>
+          <td>{{ emp.EmpName }}</td>
+          <td>{{ emp.EmpSalary }}</td>
+          <td>{{ emp.EmpDepartment }}</td>
+          <td class="bg-success">{{ emp.EmpCity }}</td>
+        </tr>
+      } @else {
+        <tr>
+          <td>{{ emp.Empid }}</td>
+          <td>{{ emp.EmpName }}</td>
+          <td>{{ emp.EmpSalary }}</td>
+          <td>{{ emp.EmpDepartment }}</td>
+          <td>{{ emp.EmpCity }}</td>
+        </tr>
+      }
+    }
+  </tbody>
+</table>

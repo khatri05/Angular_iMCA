@@ -8,11 +8,12 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { CourseComponent } from './pages/course/course.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FooterComponent } from "./footer/footer.component";
+import { EmployeeComponent } from './pages/employee/employee.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HomeComponent, AboutComponent, ContactComponent, CalculatorComponent, ProfileComponent, CourseComponent, DashboardComponent, RouterLink, RouterOutlet, FooterComponent],
+  imports: [HomeComponent, AboutComponent, ContactComponent, CalculatorComponent, ProfileComponent,EmployeeComponent, CourseComponent, DashboardComponent, RouterLink, RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
