@@ -1,3 +1,4 @@
+<h2>{{today|date}}</h2>
 <div>
   @if (isUserLoggedIn) {
     <div>
@@ -20,4 +21,24 @@
             <li>{{i+1}}-{{stud}}</li>
         </ul>
     }
+</div>
+<div>
+  <div [ngClass]="classSuccessValue">
+    Div-1
+  </div>
+  <div [ngClass]="classPrimaryValue">
+    Div-2
+  </div>
+  <div [ngClass]="classWarningValue">
+    Div-3
+  </div>
+  <div [ngClass]="classSecondaryValue">
+    Div-4
+  </div>
+</div>
+<div>
+  <button class="btn btn-success" (click)="ChangeToSuccess()">ChangeTOSuccess</button>
+  <button class="btn btn-primary" (click)="ChangeToPrimary()">ChangeTOPrimary</button>
+  <button class="btn btn-warning" (click)="ChangeToWarning()">ChangeTOWarning</button>
+  <button class="btn btn-secondary" (click)="ChangeToSecondary()">ChangeTOSecondary</button>
 </div>

@@ -1,3 +1,4 @@
+import { CurrencyPipe, DatePipe, JsonPipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Employee {
@@ -11,7 +12,7 @@ interface Employee {
 @Component({
   selector: 'app-employee',
   standalone: true,
-  imports: [],
+  imports: [CurrencyPipe,UpperCasePipe,JsonPipe],
   templateUrl: './employee.component.html',
   styleUrl: './employee.component.css'
 })

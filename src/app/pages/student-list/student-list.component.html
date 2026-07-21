@@ -1,0 +1,13 @@
+<label>
+    <input type="checkbox" [(ngModel)]="showList">
+    Show Student List
+</label>
+
+@if(showList){
+    <ol>
+        @for(stud of Students;track $index){
+        
+        <li>{{stud}}</li>  
+    }
+    </ol>
+}

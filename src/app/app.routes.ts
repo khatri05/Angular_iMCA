@@ -8,6 +8,9 @@ import { CourseComponent } from './pages/course/course.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { DirectiveComponent } from './pages/directive/directive.component';
+import { AttributeComponent } from './pages/attribute/attribute.component';
+import { PiangularComponent } from './pages/piangular/piangular.component';
+import { StudentListComponent } from './pages/student-list/student-list.component';
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
     {path:'course',component:AboutComponent},
@@ -17,5 +20,8 @@ export const routes: Routes = [
     {path:'enum',component:CourseComponent},
     {path:'contact',component:ContactComponent},
     {path:'employee',component:EmployeeComponent},
-    {path:'directive',component:DirectiveComponent}
+    {path:'directive',component:DirectiveComponent},
+    {path:'attribute',component:AttributeComponent},
+    {path:'piangular',component:PiangularComponent},
+    {path:'studentList',component:StudentListComponent}
 ];

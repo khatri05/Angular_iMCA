@@ -16,16 +16,16 @@
       @if (emp.EmpCity === "Ahmedabad") {
         <tr>
           <td>{{ emp.Empid }}</td>
-          <td>{{ emp.EmpName }}</td>
-          <td>{{ emp.EmpSalary }}</td>
+          <td>{{ emp.EmpName|uppercase }}</td>
+          <td>{{ emp.EmpSalary|currency:'INR':true }}</td>
           <td>{{ emp.EmpDepartment }}</td>
           <td class="bg-success">{{ emp.EmpCity }}</td>
         </tr>
       } @else {
         <tr>
           <td>{{ emp.Empid }}</td>
-          <td>{{ emp.EmpName }}</td>
-          <td>{{ emp.EmpSalary }}</td>
+          <td>{{ emp.EmpName|uppercase }}</td>
+          <td>{{ emp.EmpSalary|currency:'INR':true }}</td>
           <td>{{ emp.EmpDepartment }}</td>
           <td>{{ emp.EmpCity }}</td>
         </tr>
@@ -33,3 +33,7 @@
     }
   </tbody>
 </table>
+<div>
+  <h4>Emp Details in Json Format: </h4>
+  {{EmpDetails|json}}
+</div>

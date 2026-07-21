@@ -1,0 +1,19 @@
+<div>
+  <div [hidden]="!isVisible">
+    This is Div 1
+  </div>
+  <button class="btn btn-success" (click)="showDiv()">Show</button>
+  <button class="btn btn-danger" (click)="hideDiv()">Hide</button>
+
+  <div> @if (isdivHide){This is Div 2}</div>
+  <button class="btn btn-primary" (click)="toggleDiv()">Show/Hide</button>
+  <div>
+    @if (firstNumber === secondNumber){
+      <div [hidden]="isDivVisible">
+        This is Div 3
+      </div>
+    }
+  </div>
+  <input type="number" [(ngModel)]="firstNumber" placeholder="Enter Number 1"/><br/>
+  <input type="number" [(ngModel)]="secondNumber" placeholder="Enter Number 2"/>
+</div>
